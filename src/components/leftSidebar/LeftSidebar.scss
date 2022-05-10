@@ -1,3 +1,5 @@
+$media-mobile: "only screen and (max-width : 600px)";
+
 .leftSidebar {
     width: 280px;
     height: 100%;
@@ -64,3 +66,21 @@
         }
     }
   }
+
+
+@media #{$media-mobile} {
+    .leftSidebar {
+        min-width: 64px;
+        width: 64px;
+        .searchBox {
+            display: none;
+        }
+    }
+
+
+    .leftMenu .menuContainer ul li a
+
+    .leftMenu .menuContainer ul li {
+        margin: 25px 0;
+    }
+}
