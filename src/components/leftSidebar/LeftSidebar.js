@@ -4,6 +4,8 @@ import { BiSearchAlt } from "react-icons/bi";
 import { MenuList1 } from '../../data/Menu1'
 import Menu from '../menu/Menu';
 import './LeftSidebar.scss';
+import Playlist from "../Playlist/Playlist";
+import Tracker from "../Tracker/Tracker";
 
 const LeftSidebar = () => {
     return (
@@ -16,7 +18,6 @@ const LeftSidebar = () => {
   
             <h2>Spotify</h2>
           </div>
-  
           <i>
             <FaEllipsisH />
           </i>
@@ -28,8 +29,9 @@ const LeftSidebar = () => {
             <BiSearchAlt />
           </i>
         </div>
-  
         <Menu title={"Menu"} listObject={MenuList1} />
+        <Playlist/>
+        <Tracker/>
       </div>
     );
 };
