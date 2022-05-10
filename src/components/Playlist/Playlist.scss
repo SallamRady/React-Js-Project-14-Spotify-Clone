@@ -1,0 +1,62 @@
+$media-mobile: "only screen and (max-width : 600px)";
+
+.playlist {
+  margin: 15px 0px;
+  cursor: pointer;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #848484;
+    margin-bottom: 10px;
+
+    p {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    i{
+      cursor: pointer;
+      color: #f1f1f1;
+    }
+
+  }
+
+  .playListScroll {
+    height: 140px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+
+    .playLists {
+      display: flex;
+      align-items: center;
+      color: #848484;
+      margin: 10px 0;
+      .list {
+        font-size: 18px;
+      }
+      p {
+        font-size: 16px;
+        margin-left: 15px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: inline;
+      }
+      .trash {
+        font-size: 18px;
+        margin-left: auto;
+      }
+    }
+    .playLists:hover {
+      color: #f1f1f1;
+      transition: all 0.3s;
+    }
+  }
+}
+
+@media #{$media-mobile} {
+  .playlist {
+    display: none;
+  }
+}
