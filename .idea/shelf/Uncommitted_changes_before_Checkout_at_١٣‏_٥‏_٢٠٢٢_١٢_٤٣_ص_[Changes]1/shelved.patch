@@ -1,0 +1,24 @@
+Index: src/components/content/MainContent.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\n\nconst MainContent = () => {\n    return (\n        <div>\n            MainContent\n        </div>\n    );\n};\n\nexport default MainContent;
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/content/MainContent.js b/src/components/content/MainContent.js
+--- a/src/components/content/MainContent.js	
++++ b/src/components/content/MainContent.js	
+@@ -1,9 +1,11 @@
+ import React from 'react';
++import Banner from "../Banner/Banner";
++import './MainContent.scss';
+ 
+ const MainContent = () => {
+     return (
+-        <div>
+-            MainContent
++        <div className='mainContainer'>
++            <Banner/>
+         </div>
+     );
+ };
