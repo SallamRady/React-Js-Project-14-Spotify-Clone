@@ -19,7 +19,6 @@ const Menu = ({title , listObject}) => {
     return (
         <div className="menuContainer">
             <p>{title}</p>
-
             <ul>
                 {listObject && listObject.map((item) => (
                     <li key={item.id}>
