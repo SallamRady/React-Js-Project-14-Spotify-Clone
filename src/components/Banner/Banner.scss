@@ -82,7 +82,6 @@ $media-mobile: "only screen and (max-width : 600px)";
                 display: flex;
                 align-items: center;
                 a {
-                    box-shadow: 1px 3px 2px grey;
                     text-decoration: none;
                     padding: 10px 30px;
                     font-size: 18px;
@@ -96,6 +95,9 @@ $media-mobile: "only screen and (max-width : 600px)";
                         margin-right: 10px;
                         font-size: 14px;
                     }
+                }
+                a:hover{
+                    box-shadow: 1px 3px 2px grey;
                 }
                 a:nth-child(1) {
                     background: #39aa24;
