@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b228bc5-0979-4180-9fa9-ba244aed3969" name="Changes" comment="implement banner component." />
+    <list default="true" id="7b228bc5-0979-4180-9fa9-ba244aed3969" name="Changes" comment="implement banner component.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/content/MainContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/MainContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/content/MainContent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/content/MainContent.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/leftSidebar/LeftSidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/leftSidebar/LeftSidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu/Menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/Menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/rightSidebar/RightSidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rightSidebar/RightSidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/rightSidebar/RightSidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/rightSidebar/RightSidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/Menu1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Menu1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +81,10 @@
       <workItem from="1652304416811" duration="2628000" />
       <workItem from="1652311249211" duration="983000" />
       <workItem from="1652393930884" duration="1519000" />
+      <workItem from="1652530190609" duration="36000" />
+      <workItem from="1652530531152" duration="252000" />
+      <workItem from="1652531497565" duration="588000" />
+      <workItem from="1652706125054" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="add playlist , tracker components to left sidebar">
       <created>1652218272149</created>
@@ -114,7 +132,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="rightSidebar" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

@@ -1,0 +1,176 @@
+$media-mobile: "only screen and (max-width : 600px)";
+
+.SongsList{
+    padding: 10px 30px;
+    margin-bottom: 0;
+    .title{
+        font-size: 18px;
+        color: #f1f1f1;
+        span{
+            margin-left: 5px;
+            color: #848484;
+            font-size: 14px;
+            font-weight: 200;
+        }
+    }
+    .songsContainer {
+        height: 220px;
+        overflow-y: scroll;
+        .songs{
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 600;
+            color: #848484;
+            width: 100%;
+            margin: 10px 0;
+            padding: 5px;
+            padding-bottom: 5px;
+            .song{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                padding-bottom: 5px;
+                .imgBox {
+                    width: 45px;
+                    min-width: 45px;
+                    height: 45px;
+                    border-radius: 0.5em;
+                    background-color: #848484;
+                    margin-right: 10px;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .section {
+                    display: flex;
+                    width: 100%;
+                    .songName {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 50%;
+                        .songSpan {
+                            margin-left: 0;
+                            font-size: 12px;
+                        }
+                    }
+                    .hits {
+                        display: flex;
+                        margin-left: auto;
+                        align-items: center;
+                        p {
+                            margin: 0 20px;
+                        }
+                        p:nth-child(1) {
+                            margin-left: 0;
+                        }
+                        .favourite{
+                            i {
+                                color: #49e12e !important;
+                                filter: drop-shadow(0px 0px 4px #49e12e);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .songs.active{
+            color: #f1f1f1 !important;
+        }
+        .songs:hover{
+            color: #f1f1f1;
+            transition: all 0.3s;
+            cursor: pointer;
+            .song{
+                .imgBox{
+                    img {
+                        transform: scale(1.2);
+                        transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                    }
+                }
+                .section{
+                    .songName{
+                        .songSpan{
+                            color: #f1f1f1;
+                            transition: all 0.3s;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        .count{
+            margin-right: 10px;
+        }
+    }
+
+    .SongPlayer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 15px;
+        margin-top: 10px;
+        border-top: 1px solid gray;
+        .imgBox {
+            width: 70px;
+            min-width: 70px;
+            height: 60px;
+            border-radius: 0.5em;
+            margin-right: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        img:hover{
+            transform: scale(1.02);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        p{
+            font-size: 20px;
+            color: #fff;
+            font-weight: 500;
+            text-shadow: 0.5px 0.5px 1px darkblue;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media #{$media-mobile}{
+    .SongsList{
+        padding: 10px 0;
+        .songs{
+            .song{
+                .section{
+                    .songName{
+                        span{
+                            display: none;
+                        }
+                    }
+                    .hits{
+                        display: none !important;
+                    }
+                }
+            }
+        }
+        .SongPlayer{
+            flex-direction: column;
+            align-items: start;
+            .imgBox{
+                display: none;
+            }
+            audio{
+                width: 230px;
+            }
+        }
+    }
+}
