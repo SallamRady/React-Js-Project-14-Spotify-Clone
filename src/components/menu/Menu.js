@@ -1,4 +1,5 @@
 import React,{useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import './Menu.scss';
 
 const Menu = ({title , listObject}) => {
@@ -21,10 +22,10 @@ const Menu = ({title , listObject}) => {
             <ul>
                 {listObject && listObject.map((item) => (
                     <li key={item.id}>
-                        <a href="#">
+                        <Link to={item.path}>
                             <i>{item.icon}</i>
                             <span> {item.name}</span>
-                        </a>
+                        </Link>
                     </li>
                 ))}
             </ul>

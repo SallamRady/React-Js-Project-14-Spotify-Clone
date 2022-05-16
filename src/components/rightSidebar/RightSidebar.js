@@ -1,23 +1,20 @@
 import React from 'react';
 import { FaCrown, FaBell, FaRegHeart, FaSun, FaCogs } from "react-icons/fa";
-import profile from '../../resources/img/profile.jpg'
+import ProfileImg from '../../resources/img/profile.jpg';
 import './RightSidebar.scss';
 
 const RightSidebar = () => {
     return (
         <div className="rightContainer">
             <div className="goPro">
-                <i>
-                    <FaCrown />
-                    <p>
-                        <span> Go</span>Pro
-                    </p>
+                <i><FaCrown />
+                <p>
+                    <span> Go</span>Pro
+                </p>
                 </i>
-
                 <i>
                     <FaBell />
                 </i>
-
                 <i>
                     <FaRegHeart />
                 </i>
@@ -29,9 +26,8 @@ const RightSidebar = () => {
                 <i>
                     <FaCogs />
                 </i>
-
                 <div className="profileImage">
-                    <img src={profile} alt="" />
+                <img src={ProfileImg} alt="" />
                 </div>
             </div>
         </div>
